@@ -129,7 +129,8 @@
     			color: #FFFFFF;
     			font-size: 14.4px;
     			opacity: 0.6;
-    			line-height:0.6;
+    			line-height:0.1;
+    			margin: 10px;
 			   
 			}
 			.popular a{
@@ -139,10 +140,6 @@
 				border-bottom:0px;
 			    text-decoration:none;
 			    color:inherit;
-
-			}
-			.popular a:hover{
-				color: #FFFFFF;
 
 			}
 
@@ -220,11 +217,52 @@
 			    opacity: 1;
 			}
 
-
+			.textoprincipal{
+				text-align: center;
+    			display:table;
+				z-index: 5;
+			    position: relative;
+			    top: -380px;
+			   	font-family:'Open Sans';
+    			color: #FFFFFF;
+    			font-size: 32px;
+    			
+    			margin: 0 auto;
+    			text-decoration:none;   
+			}
 			
+			.pesquisa2{
+			    width: 100%;
+			    margin-left: 50px;
+			    padding: 18px 0px;
+			    border: 0;
+			    font: normal 16px Open Sans,sans-serif;
+			    opacity: 0.5;
+		
+			  }
 
-			@media only screen and (max-width: 600px) {
+
+			@media only screen and (max-width: 360px) {
+				.menudireita{display: none;}
+				.dropdown{display: none;}
+				.textoprincipal{font-size: 26px;}
+				.popular{font-size:12px;}
+				#opcentrais{display: none;}
 			
+			}
+
+			@media only screen and (max-width: 615px) {
+			
+				.textoprincipal{font-size: 28px;}
+				
+			
+			}
+			@media only screen and (max-width: 1180px) {
+				.menudireita{display: none;}
+				.dropdown{display: none;}
+				.textoprincipal{font-size: 26px;}
+				.popular{font-size:12px;}
+				#opcentrais{display: none;}
 			}
 
 		
@@ -246,9 +284,9 @@
 				<li>
 					<a href="#">
 						Explorar &#160;     
-						<i class="dropdown1">
+						<span class="dropdown1">
 							<img src="imagens/icon-explorar.svg" alt="dropdown1">
-						</i>
+						</span>
 					</a>
 				</li>	
 			
@@ -276,12 +314,10 @@
 			<a href="#"><img src="imagens/logop.svg" alt="logo Pixabay"></a>
 		</div>
 
-		<div class="top">
-			<a class="texto">
-				<h1>Use o nosso banco de imagens Royalty Free</h1>
-			</a>
-		</div>
-
+		<div class="top"> </div>
+	
+		<div class="textoprincipal"><b>Use o nosso banco de imagens Royalty Free</b></div>		
+		
 		<div class="popular">
 			Popular Images:
 			<a href="#">mulher</a>,
@@ -300,10 +336,12 @@
 		
 		<div class="search">		
 			<form class="media_search">
-
+		<span>
+		<input class="pesquisa2" type="text" name="q" value="" placeholder="Procurar imagens, vetores e videos" data-autofocus="" autocomplete="" style="background-color: unset;">
+		</span>
 				<div class="lupa"></div>
 				<a href="#"><img src="imagens/lupa.svg" alt="lupa" width="120%"></a>
-				<div class="pesquisa">Procurar imagens, vetores e videos</div>
+				<!--<div class="pesquisa">Procurar imagens, vetores e videos</div>-->
 					<a href="#">
 						<div class="dropdown">Imagens&#160;
 							<i class="dropdown2">
@@ -315,6 +353,7 @@
 			</form>
 		</div>
 
+		
 	
 		<div class="bottom"><a href="#">Imagens gratuitas de Kanenori</a></div>
 		
