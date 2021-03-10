@@ -4,4 +4,4 @@ Para a elaboração deste projeto foi utilizado o site Pixbay (www.pixabay.com) 
 
 Desenvolvido por Gustavo Henrique Tavares de Avilla, RA:1827316
 
-O projeto foi hospedado no GitHub Pages, e pode ser acessado através deste link: https://gustavoavilla.github.io/projeto1web
+O projeto foi hospedado no GitHub Pages, e pode ser acessado através deste <a href="https://gustavoavilla.github.io/projeto1web">Link</a>.
