@@ -9,18 +9,48 @@
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
  	   	<link href='open-sans.css' rel='stylesheet' type='text/css'>
    		<style type="text/css" media="screen">
+			
 
-			body{margin: 0}
-			header{
-				width: : 100%;
-				height: 60px;
-				position: relative;
-				z-index: 0;
-				background-color: #FFFFFF;
+			body {
+			  margin: 0;
+			  background-color: #FFFFFF;
 			}
-		
-			#opcentrais ul {
-			    padding:15px 19px;
+
+			.wrapper {
+				margin: 0 auto;
+  			}
+
+			header{
+			  	 display: inline;
+				 width: 100%;
+				 height: 60px;
+				 background-color: #FFFFFF;
+				 align-items: center;
+				 justify-content: space-between;
+				 position: absolute;
+				 margin-top: 0;
+				 top: 0;
+				 z-index: 9999;
+			}
+
+			.menu li {
+				display: inline-block;
+				margin: 10px;
+				align-items: center;
+			}
+
+			.logo {
+				width: 180px;
+				float: left;
+			}
+
+			.logo img {
+				padding: 18px 27px; 
+			}			
+
+
+			.menuesquerda ul {
+			    padding:10px 19px;
 			    background-color:;
 			    list-style:none;
 			    z-index: 1;
@@ -28,87 +58,70 @@
 			    top: -24px;
 			    margin-left:140px;
 			    float:left;
-
 			}
-			#opcentrais ul li { 
+
+			.menuesquerda li a {
+				padding:10px 5px;
+				font-size: 14px;
 				display: inline;
+				max-height: 38px;
+				line-height: 33px;
+				tab-size: 4;
 				font-family:'Open Sans';
-				font-size: 14px
-			}
-			
-			#opcentrais ul li a {
-			    padding: 15px 16px;
-			    display: inline-block;
+				letter-spacing: 0.02em;
+				left: 100px;
 
-			    /* visual do link */
-			    color: #191B26;
-			    text-decoration: none;
-			    border-bottom:0px ;
+				/* visual do link */
+				color: #191B26;
+				text-decoration: none;
+				border-bottom:0px ;
+
 			}
-			#opcentrais ul li a:hover {
-			    color: #5E5F66;
-			    
+			.menuesquerda li a:hover {
+			   color: #5E5F66;
 			}
 
-			.logo{
+			.menudireita ul {
+				padding:15px -15px;
 				position: absolute;
-			    float:left;
-			
+				right: 100px;
+				top: -4px;
+				color: #191B26;
 			    text-decoration: none;
-			    
-			    z-index: 3;
-			    top: 18px;
-			    left: 20px;
-    		}
-
-    		.menudireita ul{
-			    padding:15px 19px;
-			    background-color:;
-			    list-style:none;
-			    z-index: 1;
-			    position: absolute;
-			    top: -24px;
-			    margin-left:890px;
-			    float:left;    			
-    		}
-
-    		.menudireita li{
-				display: inline;
+			    border-bottom:0px ;
 				font-family:'Open Sans';
 				font-size: 14px
 			}
 
-			.menudireita li a{ 
-				padding: 15px 16px;
+			.menudireita li a {
+				padding:10px 8px;
 			    display: inline-block;
-
 			    color: #191B26;
 			    text-decoration: none;
 			    border-bottom:0px ;
-
+				display: inline;
+				font-family:'Open Sans';
+				font-size: 14px
 			}
 
 			.menudireita li a:hover {
-			    color: #5E5F66;
+			   color: #5E5F66;
 			}
 
-			.top{
-
+			.fundo{
 				background-image: url(imagens/background2.jpg);
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
-
 				width: : 100%;
-				height: 500px;
-				
+				height: 560px;
 				z-index: 4;
 				background-color: ;
 			    position: relative;
     			padding: 20px 20px 5px;
    			   
 			}
-			.top a{
+			.fundo a{
 				text-align: center;
     			font-family:'Open Sans';
     			color: #FFFFFF;
@@ -116,105 +129,6 @@
     			font-size: 16px;
 			    z-index: 3;
 			    top: 118px;
-			   
-			}
-			.popular{
-			    padding:15px 19px;
-
-				z-index: 5;
-			    position: relative;
-			    text-align: center;
-			    top: -220px;
-			   	font-family:'Open Sans';
-    			color: #FFFFFF;
-    			font-size: 14.4px;
-    			opacity: 0.6;
-    			line-height:0.1;
-    			margin: 10px;
-			   
-			}
-			.popular a{
-			    font-family:'Open Sans';
-				
-				color: #FFFFFF;
-				border-bottom:0px;
-			    text-decoration:none;
-			    color:inherit;
-
-			}
-
-			.search{
-				width: 59.19%;
-				height: 60px;
-				position: absolute;
-				background-color: #FFFFFF;
-				left: 0;
-				right: 0;
-				top:305px;
-
-				margin-top:-10px;
-				text-align: center;
-				z-index: 6;
-				margin: 0 auto;
-				border-radius:6px;
-
-			}
-
-			.search a{
-				position: absolute;
-			    float:left;			
-			    text-decoration: none;			    
-			    z-index: 3;
-			    top: 20px;
-			    left: 17px;
-			    opacity: 0.8;
-    		}
-   
-   			.pesquisa{
-				text-align: center;
-    			font-family:'Open Sans';
-    			color: #191b26;
-    			position: relative;
-    			font-size: 16.5px;
-			    z-index: 3;
-			    top: 20px;
-			    left: -215px;
-			    opacity: 0.4;
-   			}
-   			.dropdown{
-				text-align: center;
-    			font-family:'Open Sans';
-    			color: #191b26;
-    			position: relative;
-    			font-size: 16.8px;
-			    z-index: 3;
-			    top: 1px;
-			    left: 680px;
-			    opacity: 0.6;
-   			}
-
-			.dropdown:hover {
-			    color: #191b26;
-			    opacity: 1;
-			}
-
-			.bottom a{
-				display:table;
-				z-index: 5;
-			    position: relative;
-			    top: -115px;
-			   	font-family:'Open Sans';
-    			color: #FFFFFF;
-    			font-size: 14.4px;
-    			opacity: 0.7;
-    			margin: 0 auto;
-    			text-decoration:none;    		
-
-			}
-
-			.bottom a:hover {
-			    color: #FFFFFF;
-			    opacity: 1;
 			}
 
 			.textoprincipal{
@@ -230,54 +144,644 @@
     			margin: 0 auto;
     			text-decoration:none;   
 			}
-			
-			.pesquisa2{
-			    width: 100%;
+
+			.bpesquisa{
+				width: 59.19%;
+				height: 60px;
+				max-width: 800px;
+				min-width: 310px;
+				position: absolute;
+				background-color: #FFFFFF;
+				left: 0;
+				right: 0;
+				top:305px;
+
+				margin-top:-10px;
+				text-align: center;
+				z-index: 6;
+				margin: 0 auto;
+				border-radius:6px;
+			}
+
+			.bpesquisa a{
+				position: absolute;
+			    float:left;			
+			    text-decoration: none;			    
+			    z-index: 3;
+			    top: 20px;
+			    left: 17px;
+			    
+    		}
+      	
+			.binput{
+				max-width: 880px;
+				width: 90%;
 			    margin-left: 50px;
 			    padding: 18px 0px;
 			    border: 0;
 			    font: normal 16px Open Sans,sans-serif;
 			    opacity: 0.5;
+		    }
+
+			.bfinput a{
+				max-width: 880px;
+				text-align: center;
+    			font-family:'Open Sans';
+    			color: #191b26;
+    			position: fixed;
+    			font-size: 16.8px;
+			    z-index: 3;
+			    top: 320px;
+			    left: 800px;
+			    opacity: 0.6;
+			    float: left;
+			}
+
+			.bimagens{
+				width: 150px;
+				height: 150px;
+				position: absolute;
+				right: -22px;
+				top: -18px;
+				color: #191B26;
+			    text-decoration: none;
+			    border-bottom:0px ;
+			    font-family:'Open Sans';
+				font-size: 16px
+			}
+
+			.bimagens a{
+			   	/* visual do link */
+				color: #B0B0B4;
+				text-decoration: none;
+				border-bottom:0px ;
+				border-width: 15px;
+ 				border-style: solid;
+  				border-color: #FFFFFF;
+  				background-color: #FFFFFF;
+			}
+
+			.bimagens a:hover {
+			   color: #191B26;
+			}
+
+			.icon-menu {
+			    display: flex;
+			    position: absolute;
+			    right: 8px;
+			    top: 12px;
+			}
+
 		
-			  }
+			.bt-verde {
+			font-family:'Open Sans';
+							text-decoration: none;
+
+			  display: flex;
+			  position: absolute;
+			  right: -85px;
+			  justify-content: center;
+			  align-items: center;
+			  background-color: #02BE6E;
+		
+				top:3px;
+			 
+			  letter-spacing: 0.03em;
+			  border-radius: 100px;
+			 
+			  padding: 3.5px 25px;
+			  line-height: 1.75rem;
+			  font-size: 14px;
+
+			  	/* visual do link */
+				color: #FFFFFF;
+				text-decoration: none;
+			}
+
+			.bt-verde:hover {
+			   background-color: #02AC64;
+			}
 
 
-			@media only screen and (max-width: 360px) {
+			.rodape a{
+				width: 59.19%;
+				height: 50px;
+				max-width: 800px;
+				min-width: 310px;
+				text-align: center;
+				z-index: 5;
+			    position: absolute;
+			    top: 550px;
+			    left: 0;
+				right: 0;
+			    opacity: 0.8;
+		     	font-family:'Open Sans';
+    			color: #FFFFFF;
+    			font-size: 14.4px;
+    			margin: 0 auto;
+    			text-decoration: none;
+    			z-index: 9999;
+
+ 
+			}
+
+			.popular{
+			   	width: 59.19%;
+				height: 60px;
+				max-width: 800px;
+				min-width: 310px;
+				position: absolute;				
+				font-family:'Open Sans';
+    			color: #FFFFFF;
+    			font-size: 14px;
+    			opacity: 0.6;
+    			left: 0;
+				right: 0;
+				top:375px;
+				margin-top:-10px;
+				text-align: center;
+				z-index: 6;
+				margin: 0 auto;
+				
+			}
+			.popular a{
+			    font-family:'Open Sans';
+				
+				color: #FFFFFF;
+				border-bottom:0px;
+			    text-decoration:none;
+			    color:inherit;
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			/*@media only screen and (max-width: 360px) {
 				.menudireita{display: none;}
 				.dropdown{display: none;}
 				.textoprincipal{font-size: 26px;}
-				.popular{font-size:12px;}
+				.popular{font-size:12px;max-width: 600px;}
 				#opcentrais{display: none;}
-			
-			}
+				
+			}*/ /*
 
 			@media only screen and (max-width: 615px) {
 			
 				.textoprincipal{font-size: 28px;}
+				#opcentrais ul li{display: none;}
 				
+			} */ 
+
+
+			@media only screen and (min-width: 1180px) {
+				.icon-menu{display: none;}
+			} 			
 			
+			@media only screen and (max-width: 1180px) {
+				.menuesquerda{display: none;}
+				.icon-menu{display: none;}
+				.popular{font-size:12px;max-width: 800px;}				
+			} 
+
+			@media only screen and (max-width: 800px) {
+				.menuesquerda{display: none;}
+				.icon-menu{display: none;}
+				.popular{font-size:12px;max-width: 800px;}	
+				.textoprincipal{font-size: 28px;}							
+			} 
+
+
+			@media only screen and (max-width: 570px) {
+				.menuesquerda{display: none;}
+				.icon-menu{display: inline;}
+				.popular{font-size:12px;max-width: 800px;}	
+				.textoprincipal{font-size: 26px;}					
+				.menudireita{display: none;}			
+			} 
+
+
+
+			@media only screen and (max-width: 350px) {
+				.bpesquisa{min-width: 100%;}
+				.textoprincipal{max-width: 800px;min-width: 100%;font-size: 20px;}				
+				.bimagens{display: none;}
+				.binput{display:none;}	
+				.logo{width: 80px;}
+				.popular{max-width: 800px;min-width: 10px;}	
+				.rodape a{max-width: 800px;min-width: 10px;}							
+			} 
+
+
+
+
+
+				
+				
+
+
+
+
+
+
+
+
+
+
+
+
+	.Apesquisa{
+				text-align: center;
+    			font-family:'Open Sans';
+    			color: #191b26;
+    			position: relative;
+    			font-size: 16.5px;
+			    z-index: 3;
+			    top: 20px;
+			    left: -215px;
+			    opacity: 0.4;
+   			}
+
+
+
+			.Amenudireita {
+			  display: block;
+			  align-items: center;
+			  color: rgb(240, 241, 232);
+			  list-style: none;
+			  justify-content: center;
+			  tab-size: 4;
+			  text-size-adjust: 100%;
+			  font-weight: 500;
+			  line-height: 20px;
+			  float: left;
+			  margin-top: 20px;
+
+
+		  	padding:15px 19px;
+		    background-color:;
+		    list-style:none;
+		    z-index: 1;
+		    position: absolute;
+		    top: -24px;
+		    /*margin-left:140px;
+		    float:left;*/
+		   	right: 57%;
+		    float:right;
+
+
+
+			  display: flex;
+			  position: absolute;
+			  right: 20px;
+			  justify-content: center;
+			  align-items: center;
+	
 			}
+
+
+
+
+
+			.Aopcentrais ul {
+			    padding:15px 19px;
+			    background-color:;
+			    list-style:none;
+			    z-index: 1;
+			    position: absolute;
+			    top: -24px;
+			    /*margin-left:140px;
+			    float:left;*/
+			   	right: 57%;
+			    float:right;
+
+			}
+			.Aopcentrais ul li { 
+				display: inline;
+				font-family:'Open Sans';
+				font-size: 14px
+
+			}
+			
+			.Aopcentrais ul li a {
+			    padding: 15px 16px;
+			    display: inline-block;
+
+			    /* visual do link */
+			    color: #191B26;
+			    text-decoration: none;
+			    border-bottom:0px ;
+
+			}
+			.Aopcentrais ul li a:hover {
+			    color: #5E5F66;
+			    
+			}
+
+			.Alogo{
+				padding: 20px 20px;
+				position: relative;
+			    z-index: 3;
+			    top: 5px;
+			}
+			    
+			.Alist {
+			  float: left;
+			}			    
+			    
+
+			 
+
+    		
+
+    		.Amenudireita ul{
+			    padding:15px 19px;
+			    background-color:;
+			    list-style:none;
+			    z-index: 100;
+			    position: absolute;
+			    top: -24px;
+			    left:65%;
+			    float:left;
+
+			        			
+    		}
+
+    		.Amenudireita li{
+				display: inline;
+				font-family:'Open Sans';
+				font-size: 14px
+			}
+
+			.Amenudireita li a{ 
+				padding: 15px 16px;
+			    display: inline-block;
+
+			    color: #191B26;
+			    text-decoration: none;
+			    border-bottom:0px ;
+
+			}
+
+			.Amenudireita li a:hover {
+			    color: #5E5F66;
+			}
+
+			
+			.Apopular{
+			    padding:15px 19px;
+
+				z-index: 5;
+			    position: relative;
+			    text-align: center;
+			    top: -220px;
+			   	font-family:'Open Sans';
+    			color: #FFFFFF;
+    			font-size: 14.4px;
+    			opacity: 0.6;
+    			height: auto;
+    			margin: 10px;
+			   
+			}
+			.Apopular a{
+			    font-family:'Open Sans';
+				
+				color: #FFFFFF;
+				border-bottom:0px;
+			    text-decoration:none;
+			    color:inherit;
+
+			}
+
+			
+   			.Adropdown{
+   							
+
+
+				text-align: center;
+    			font-family:'Open Sans';
+    			color: #191b26;
+   				position: relative;
+    			
+			    z-index: 300;
+			    top: 250px;
+			    left: 900px;
+			    opacity: 0.6;
+			    float: left;
+   			}
+
+			.Adropdown:hover {
+			    color: #191b26;
+			    opacity: 1;
+			}
+
+			.Abottom a{
+				display:table;
+				z-index: 5;
+			    position: relative;
+			    top: -115px;
+			   	font-family:'Open Sans';
+    			color: #FFFFFF;
+    			font-size: 14.4px;
+    			opacity: 0.7;
+    			margin: 0 auto;
+    			text-decoration:none;    		
+
+			}
+
+			.Abottom a {
+			    color: #FFFFFF;
+			    opacity: 1;
+			}
+
+
+			
+			
+
+			/*@media only screen and (max-width: 360px) {
+				.menudireita{display: none;}
+				.dropdown{display: none;}
+				.textoprincipal{font-size: 26px;}
+				.popular{font-size:12px;max-width: 600px;}
+				#opcentrais{display: none;}
+				
+			}*/ /*
+
+			@media only screen and (max-width: 615px) {
+			
+				.textoprincipal{font-size: 28px;}
+				#opcentrais ul li{display: none;}
+				
+			} */ /*
+			
 			@media only screen and (max-width: 1180px) {
 				.menudireita{display: none;}
 				.dropdown{display: none;}
 				.textoprincipal{font-size: 26px;}
-				.popular{font-size:12px;}
-				#opcentrais{display: none;}
-			}
+				.popular{font-size:12px;max-width: 800px;}
+				.opcentrais{display: none;}
+
+				
+			} */
 
 		
 		</style>
 	</head>
 	<body>
-		<header></header>
-		<nav id="opcentrais">
-			<ul>
+		<div class="wrapper">
+		<header class="menu">
+			<div class="logo">
+            	<a href="#"><img src="imagens/logop.svg" alt="logo Pixabay"></a>
+         	</div>
+          <div class= "menuesquerda">
+            <ul>
 				<li><a href="#">Fotos</a></li>
 				<li><a href="#">Ilustrações</a></li>
 				<li><a href="#">Vectores</a></li>
 				<li><a href="#">Videos</a></li>
 				<li><a href="#">Música</a></li>
-			</ul>
+            </ul>
+          </div>
+          <div class="menudireita">
+            <ul>
+				<li><a href="#">Explorar &#160;						<span class="dropdown1">
+							<img src="imagens/icon-explorar.svg" alt="dropdown1">
+						</span></a></li>
+				<li><a href="#">Efetuar login</a></li>
+				<li><a href="#">Join&#160;&#160;&#160;&#160;&#160;&#160;</a></li>
+				<li><a href="#"><span class="bt-verde">
+					<img src="imagens/icon-btverde.svg" alt="bt-verde">&#160;&#160;Carregar
+					</span></a></li>
+            </ul>
+          </div>
+           	<div class="icon-menu"> 
+					<a href="#"> <span class="icon-menu">
+					<img src="imagens/icon-menu.svg" alt="icon-menu">
+					</span></a>
+			</div>
+
+		</header>
+
+		<div class="main">
+			<div class="fundo"> </div>
+			<div class="textoprincipal"><b>Use o nosso banco de imagens Royalty Free</b></div>	
+			<div class="bpesquisa">		
+				<form class="media_search">
+					<span>
+						<input class="binput" type="text" name="q" value="" placeholder="Procurar imagens, vetores e videos" data-autofocus="" autocomplete="" style="background-color: unset;">
+					</span>
+				<div class="lupa"></div>
+				<a href="#"><img src="imagens/lupa.svg" alt="lupa" width="120%"></a>  
+				<div class="bimagens"> <a href="#">Imagens 			<span class="dropdown1">
+							<img src="imagens/icon-explorar.svg" alt="dropdown2">
+						</span></a></div>
+			</div>
+				
+  			<div class="rodape"><a href="#">Imagens gratuitas de Kanenori</a></div>
+			
+				<!--<div class="pesquisa">Procurar imagens, vetores e videos</div>-->
+
+			<div class="popular">
+			Popular Images:
+				<a href="#">mulher</a>,
+				<a href="#">natureza</a>,
+				<a href="#">flores</a>,
+				<a href="#">praia</a>,
+				<a href="#">tecnologia</a>,
+				<a href="#">carnaval</a>,
+				<a href="#">paisagem</a>,
+				<a href="#">background</a>,
+				<a href="#">pizza</a>,
+				<a href="#">dinheiro</a>,
+				<a href="#">pessoas</a>,
+				<a href="#">covid</a>
+			</div>
+				</form>
+			</div>
+		</div>
+		</div>
+	</body>
+	</html>
+
+
+
+
+	</div>
+	</body>
+	</html>
+
+
+<!--
+            			<ul>	
+				<li>
+					<a href="#">
+						Explorar &#160;     
+						<span class="dropdown1">
+							<img src="imagens/icon-explorar.svg" alt="dropdown1">
+						</span>
+					</a>
+				</li>	
+			
+				<li class="botaologin">
+					<a href="#">
+						Efetuar login
+					</a>
+				</li>
+
+				<li class="botaojoin">
+					<a href="#">
+						Join
+					</a>
+				</li>
+
+				<li class="botaocarregar">
+					<a class="botaoverde">
+						<i class="iconebotao"></i>
+							Carregar
+					</a>
+				</li>	
+
+			</ul>			
+		</div> -
+        </header>         
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!--<nav class="opcentrais">
+		
+		
+			<ul>*/
+				
+				<li><a href="#">Fotos</a></li>
+				<li><a href="#">Ilustrações</a></li>
+				<li><a href="#">Vectores</a></li>
+				<li><a href="#">Videos</a></li>
+				<li><a href="#">Música</a></li>  
+				
+			
+		</ul>
 		</nav>
 		<div class="menudireita">
 			<ul>	
@@ -309,16 +813,36 @@
 					</a>
 				</li>	
 			</ul>			
-		</div>
-		<div class="logo">
-			<a href="#"><img src="imagens/logop.svg" alt="logo Pixabay"></a>
-		</div>
-
-		<div class="top"> </div>
-	
-		<div class="textoprincipal"><b>Use o nosso banco de imagens Royalty Free</b></div>		
+		</div> 
 		
-		<div class="popular">
+					<a href="#">
+						<div class="dropdown">Imagens&#160;
+							
+								<img src="imagens/icon-explorar.svg" alt="dropdown2" >
+							
+						</div>
+					</a>
+</header>  -->
+
+
+<!--
+						<a href="#">
+					<div class="dropdown">Imagens&#160;
+						
+						<img src="imagens/icon-explorar.svg" alt="dropdown2" >
+						
+					</div>
+					</a>
+
+
+-->
+
+
+
+		<div class="fundddo"> </div>
+	
+	
+<!--		<div class="popular">
 			Popular Images:
 			<a href="#">mulher</a>,
 			<a href="#">natureza</a>,
@@ -331,35 +855,32 @@
 			<a href="#">pizza</a>,
 			<a href="#">dinheiro</a>,
 			<a href="#">pessoas</a>,
-			<a href="#"><p>covid</a>
+			<a href="#">covid</a>
 		</div>
 		
 		<div class="search">		
 			<form class="media_search">
+
 		<span>
 		<input class="pesquisa2" type="text" name="q" value="" placeholder="Procurar imagens, vetores e videos" data-autofocus="" autocomplete="" style="background-color: unset;">
+
 		</span>
 				<div class="lupa"></div>
-				<a href="#"><img src="imagens/lupa.svg" alt="lupa" width="120%"></a>
+				<a href="#"><img src="imagens/lupa.svg" alt="lupa" width="120%"></a>  
 				<!--<div class="pesquisa">Procurar imagens, vetores e videos</div>-->
-					<a href="#">
-						<div class="dropdown">Imagens&#160;
-							<i class="dropdown2">
-								<img src="imagens/icon-explorar.svg" alt="dropdown2" >
-							</i>
-						</div>
-					</a>
+
 
 			</form>
 		</div>
 
 		
 	
-		<div class="bottom"><a href="#">Imagens gratuitas de Kanenori</a></div>
+
 		
 		<!--<nav></nav>-->
 		<!--<img src="imagens/background.jpg" style="width:100%">-->
 		<!--<h1>Use o nosso banco de imagens Royalty Free</h1>-->
 
 	</body>
+
 </html>
