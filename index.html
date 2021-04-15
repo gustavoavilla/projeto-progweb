@@ -12,8 +12,8 @@
 	</head>
 	<body>
 		<header class="menu">
-			<div class="pixabay" >
-            	<a href="index.html"><img src="imagens/logop.svg" alt="logo Pixabay"></a>
+			<div class="pixabay" id="pixabay">
+            	<a href="#"><img src="imagens/logop.svg" alt="logo Pixabay"></a>
          	</div>
           <div class= "menuesquerda">
             <ul>
@@ -43,11 +43,55 @@
 			</div>
 		</header>
 
+	<div class="subrot" id="p_busca">
+		<div class="main">
+			<div class="fundo"> </div>
+			<div class="textoprincipal"><b>Use o nosso banco de imagens Royalty Free</b></div>	
+			<div class="bpesquisa">		
+				<input type="text" class="binput" id="input_2" name="busca" value="" placeholder="Procurar imagens, vetores e videos" style="background-color: unset;">
+				<div class="btn" id="btn_pesquisar">
+				<div class="lupa">
+				<a><button id="button_2"><img src="imagens/lupa.svg" alt="lupa" width="120%" ></button></a >  
+				</div>
+				<div class="bimagens"> <a href="#">Imagens 
+					<span class="dropdown1">
+							<img src="imagens/icon-explorar.svg" alt="dropdown2">
+					</span></a></div></div>
+			</div> 
+			<div class="rodape"><a href="#">Imagens gratuitas de Kanenori</a></div>
+			<div class="popular">
+			Popular Images:
+				<a href="#">mulher</a>,
+				<a href="#">natureza</a>,
+				<a href="#">flores</a>,
+				<a href="#">praia</a>,
+				<a href="#">tecnologia</a>,
+				<a href="#">carnaval</a>,
+				<a href="#">paisagem</a>,
+				<a href="#">background</a>,
+				<a href="#">pizza</a>,
+				<a href="#">dinheiro</a>,
+				<a href="#">pessoas</a>,
+				<a href="#">covid</a>
+			</div>
+				</form>
+		</div>
+		<div class="dialog" id="dialog_index">
+			<p id="mensagem_index" class="c_login">Necessário estar logado para acessar pesquisa. Faça agora o login!</p>
+			<input id="botao_conf_index" type="submit" class="botao_conf" value="OK">
+			</div>
+	
+		<div class="baba">
+		<div class="ba">
+		<ul></ul></div></div>
+	</div>
+
 	<div class="subrot" id="p_index">
 	<div class="main">
 		<div class="fundo"> </div>
 		<div class="textoprincipal"><b>Use o nosso banco de imagens Royalty Free</b></div>	
 		<div class="bpesquisa">		
+			<div class="AAAAAAAAAAAAAAAAAAAaaa"></div>
 			<input type="text" class="binput"name="busca" value="" placeholder="Procurar imagens, vetores e videos" style="background-color: unset;">
 			<div class="btn_saibamais" id="btn_pesquisar">
 			<div class="lupa">
@@ -58,6 +102,7 @@
 						<img src="imagens/icon-explorar.svg" alt="dropdown2">
 				</span></a></div>
 		</div> 
+
 			
 		<div class="rodape"><a href="#">Imagens gratuitas de Kanenori</a></div>
 		<div class="popular">
@@ -77,10 +122,7 @@
 		</div>
 			</form>
 	</div>
-	<div class="dialog" id="dialog_index">
-	<p id="mensagem_index" class="c_login">Necessário estar logado para acessar pesquisa. Faça agora o login!</p>
-	<input id="botao_conf_index" type="submit" class="botao_conf" value="OK">
-	</div>
+
 	</div>
   
 	<div class="subrot" id="p_login">
@@ -114,45 +156,6 @@
 		<input id="botao_conf_login" type="submit" class="botao_conf" value="OK">
 		</div>
 	</div>
-	</div>
-
-	<div class="subrot" id="p_busca">
-	<div class="main">
-		<div class="fundo"> </div>
-		<div class="textoprincipal"><b>Use o nosso banco de imagens Royalty Free</b></div>	
-		<div class="bpesquisa">		
-			<input type="text" class="binput"name="busca" value="" placeholder="Procurar imagens, vetores e videos" style="background-color: unset;">
-			<div class="lupa">
-			<a><button><img src="imagens/lupa.svg" alt="lupa" width="120%" ></button></a >  
-			</div>
-			<div class="bimagens"> <a href="#">Imagens 
-				<span class="dropdown1">
-						<img src="imagens/icon-explorar.svg" alt="dropdown2">
-				</span></a></div>
-		</div> 
-		<div class="rodape"><a href="#">Imagens gratuitas de Kanenori</a></div>
-		<div class="popular">
-		Popular Images:
-			<a href="#">mulher</a>,
-			<a href="#">natureza</a>,
-			<a href="#">flores</a>,
-			<a href="#">praia</a>,
-			<a href="#">tecnologia</a>,
-			<a href="#">carnaval</a>,
-			<a href="#">paisagem</a>,
-			<a href="#">background</a>,
-			<a href="#">pizza</a>,
-			<a href="#">dinheiro</a>,
-			<a href="#">pessoas</a>,
-			<a href="#">covid</a>
-		</div>
-			</form>
-	</div>
-
-
-	<div class="baba">
-	<div class="ba">
-	<ul></ul></div></div>
 	</div>
 
 	<div class="subrot" id="p_cadastro">
@@ -201,6 +204,7 @@
 
 	<script type="text/javascript">
 	buscar();
+	pixabay();
 	login();
 	icon_menu();
 	cadastro();

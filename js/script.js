@@ -5,7 +5,7 @@ function icon_menu() {
   var p_cadastro = document.getElementById("p_cadastro");
 
   p_login.className = "ocult";
-  p_busca.className = "ocult";
+  p_index.className = "ocult";
   p_cadastro.className = "ocult";
   icon_drop.addEventListener("click", function () {
     if(mobile.className=="mobile_menu_top")
@@ -19,14 +19,15 @@ function buscar() {
     var p_login = document.getElementById("p_login");
     var p_busca = document.getElementById("p_busca");
     var p_cadastro = document.getElementById("p_cadastro");
-    var token = localStorage.getItem("token");
+
     var dialog = document.getElementById("dialog_index");
     var c_login = document.getElementById("mensagem_index");
     var botao_conf_index = document.getElementById("botao_conf_index");
     var btn_pesquisar = document.getElementById("btn_pesquisar");
   
     btn_pesquisar.addEventListener("click", function () {
-   
+      var token = localStorage.getItem("token");
+      console.log();
       if (token == undefined) {
         c_login.innerHTML = "Realize o login para buscar as fotos.";
         dialog.className = "dialog show";
@@ -35,7 +36,7 @@ function buscar() {
         p_login.className = "ocult";
         p_busca.className = "subrot";
         p_cadastro.className = "ocult";
-      }
+       }
     });
   
     botao_conf_index.addEventListener("click", function () {
@@ -43,11 +44,13 @@ function buscar() {
       p_login.className = "subrot";
       p_busca.className = "ocult";
       p_cadastro.className = "ocult";
+      dialog.className = "dialog";
     });
     var aux = 0;
     var i = 0;
     var container = document.querySelector('.ba ul');
-    document.querySelector("button").addEventListener('click', function(){
+    var ab = document.getElementById("button_2");
+    ab.addEventListener('click', function(){
         var img = document.getElementById("result");
         var query = document.querySelector('input').value;
         var token = localStorage.getItem("token");
@@ -57,7 +60,7 @@ function buscar() {
            }
           else{
             var hits = res.data.hits;
-            for(var i=0; i<20; i++){
+            for(var i=0; i<8; i++){
               var li = document.createElement('li'),
               img=document.createElement('img');
               li.innerHTML = hits[i].largeImageURL;
@@ -110,9 +113,7 @@ function login() {
             c_login.innerHTML = "Login realizado, você será redirecionado para a busca";
             dialog.className = "dialog show";
             retorno = r.status;
-            setTimeout(function() {
-              window.location.reload();
-            }, 1750); // 3 minutos
+  
          }
 
           })
@@ -323,4 +324,19 @@ function logar() {
       p_index.className = "ocult";
       mobile.className = "mobile_menu_top";
     });
+}
+
+function pixabay() {
+  var p_login = document.getElementById("p_login");
+  var p_busca = document.getElementById("p_busca");
+  var p_cadastro = document.getElementById("p_cadastro");
+  var p_index = document.getElementById("p_index");
+  var pixabay = document.getElementById("pixabay");
+
+  pixabay.addEventListener("click", function () {
+  p_login.className = "ocult";
+  p_busca.className = "subrot";
+  p_cadastro.className = "ocult";
+  p_index.className = "ocult";
+  });
 }
