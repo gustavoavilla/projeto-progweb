@@ -1,11 +1,9 @@
 function icon_menu() {
   var icon_drop = document.getElementById("icon_drop");
   var p_login = document.getElementById("p_login");
-  var p_busca = document.getElementById("p_busca");
   var p_cadastro = document.getElementById("p_cadastro");
 
   p_login.className = "ocult";
-  p_index.className = "ocult";
   p_cadastro.className = "ocult";
   icon_drop.addEventListener("click", function () {
     if(mobile.className=="mobile_menu_top")
@@ -15,7 +13,6 @@ function icon_menu() {
   });
 }
 function buscar() {
-    var p_index = document.getElementById("p_index");
     var p_login = document.getElementById("p_login");
     var p_busca = document.getElementById("p_busca");
     var p_cadastro = document.getElementById("p_cadastro");
@@ -32,7 +29,6 @@ function buscar() {
         c_login.innerHTML = "Realize o login para buscar as fotos.";
         dialog.className = "dialog show";
       } else {
-        p_index.className = "ocult";
         p_login.className = "ocult";
         p_busca.className = "subrot";
         p_cadastro.className = "ocult";
@@ -40,7 +36,6 @@ function buscar() {
     });
   
     botao_conf_index.addEventListener("click", function () {
-      p_index.className = "ocult";
       p_login.className = "subrot";
       p_busca.className = "ocult";
       p_cadastro.className = "ocult";
@@ -110,22 +105,21 @@ function login() {
         .then(function (r) {
           if (r.status == 200) { //resposta servidor
             localStorage.setItem("token", r.data.token); //armazenar login mesmo atualizando a página
-            c_login.innerHTML = "Login realizado, você será redirecionado para a busca";
+            c_login.innerHTML = "Login realizado, agora é possível realizar a busca";
             dialog.className = "dialog show";
             retorno = r.status;
-  
-         }
+           }
 
           })
         .catch(function (error) {
           c_login.innerHTML = "Dados incorretos";
           dialog.className = "dialog show";
-          retorno = 400;
+          retorno = 400; //resposta servidor
         })
     } else {
       c_login.innerHTML = "Dados inválidos";
       dialog.className = "dialog show";
-      retorno = 400;
+      retorno = 400; //resposta servidor
     }
   });
 
@@ -133,13 +127,11 @@ function login() {
       dialog.className = "dialog";
       var p_busca = document.getElementById("p_busca");
       var p_login = document.getElementById("p_login");
-      var p_index = document.getElementById("p_index");
       var p_cadastro = document.getElementById("p_cadastro");
 
       if (retorno == 200) {
       p_busca.className = "subrot";
       p_login.className = "ocult";
-      p_index.className = "ocult";
       p_cadastro.className = "ocult";
     }
   });
@@ -222,19 +214,16 @@ function join() {
         dialog.className = "dialog show";
         retorno = 400;
       }
-  
-    });
+       });
   
     botao_conf.addEventListener("click", function () {
       dialog.className = "dialog";
 
       if (retorno == 200) {
-        var p_index = document.getElementById("p_index");
         var p_login = document.getElementById("p_login");
         var p_busca = document.getElementById("p_busca");
         var p_cadastro = document.getElementById("p_cadastro");
   
-        p_index.className = "ocult";
         p_login.className = "subrot";
         p_busca.className = "ocult";
         p_cadastro.className = "ocult";
@@ -242,7 +231,6 @@ function join() {
     });
     var btn_logar2 = document.getElementById("btn_inicio");
     btn_logar2.addEventListener("click", function () {
-      p_index.className = "ocult";
       p_login.className = "subrot";
       p_busca.className = "ocult";
       p_cadastro.className = "ocult";
@@ -273,7 +261,6 @@ function verificacao3(email) {
 function logar() {
   var link_logar1 = document.getElementById("link_logar1");
   var link_logar2 = document.getElementById("link_logar2");
-  var p_index = document.getElementById("p_index");
   var p_login = document.getElementById("p_login");
   var p_busca = document.getElementById("p_busca");
   var p_cadastro = document.getElementById("p_cadastro");
@@ -282,7 +269,6 @@ function logar() {
     p_cadastro.className = "ocult";
     p_login.className = "subrot";
     p_busca.className = "ocult";
-    p_index.className = "ocult";
     mobile.className = "mobile_menu_top";
   });
 
@@ -290,7 +276,6 @@ function logar() {
     p_cadastro.className = "ocult";
     p_login.className = "subrot";
     p_busca.className = "ocult";
-    p_index.className = "ocult";
     mobile.className = "mobile_menu_top";
   });
 }
@@ -298,7 +283,6 @@ function logar() {
     var link_cadastrar = document.getElementById("link_cadastrar");
     var link2_cadastrar = document.getElementById("link2_cadastrar");
     var link3_cadastrar = document.getElementById("link3_cadastrar");
-    var p_index = document.getElementById("p_index");
     var p_login = document.getElementById("p_login");
     var p_busca = document.getElementById("p_busca");
     var p_cadastro = document.getElementById("p_cadastro");
@@ -307,36 +291,30 @@ function logar() {
       p_cadastro.className = "subrot";
       p_login.className = "ocult";
       p_busca.className = "ocult";
-      p_index.className = "ocult";
     });
 
     link2_cadastrar.addEventListener("click", function () {
       p_cadastro.className = "subrot";
       p_login.className = "ocult";
       p_busca.className = "ocult";
-      p_index.className = "ocult";
     });
 
     link3_cadastrar.addEventListener("click", function () {
       p_cadastro.className = "subrot";
       p_login.className = "ocult";
       p_busca.className = "ocult";
-      p_index.className = "ocult";
       mobile.className = "mobile_menu_top";
     });
 }
-
 function pixabay() {
   var p_login = document.getElementById("p_login");
   var p_busca = document.getElementById("p_busca");
   var p_cadastro = document.getElementById("p_cadastro");
-  var p_index = document.getElementById("p_index");
   var pixabay = document.getElementById("pixabay");
 
   pixabay.addEventListener("click", function () {
   p_login.className = "ocult";
   p_busca.className = "subrot";
   p_cadastro.className = "ocult";
-  p_index.className = "ocult";
   });
 }
